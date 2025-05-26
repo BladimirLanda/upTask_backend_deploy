@@ -47,7 +47,7 @@ export const corsConfig: CorsOptions = {
             whiteList.push(undefined);
         }
 
-        if(whiteList.includes(origin)) {
+        if(!origin || whiteList.includes(origin)) {
             callback(null, true);
         } else {
             callback(new Error('Error de Cors'));
