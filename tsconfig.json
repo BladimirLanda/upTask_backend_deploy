@@ -10,8 +10,7 @@
         "sourceMap": true,
         "esModuleInterop": true,
         "declaration": true,
-        "removeComments": true,
-        "types": ["node"]
+        "removeComments": true
     },
     "include": ["src/**/*.ts"],
 }
